@@ -8,12 +8,12 @@ import Button from '@mui/material/Button';
 import '../App.css';
 
 const devRedirectURI = `http://localhost:3030/getuser`;
-//const redirectURI = `http://chronica-web.vercel.app/getuser`;
+const redirectURI = `http://chronica-web.vercel.app/getuser`;
 
 const config = {
   "clientId": "962607441382625360",
   'clientSecret': 'm8bzU6EnND-XGDlJRVGyFSzfyCqvOg03',
-  "redirectUri": devRedirectURI
+  "redirectUri": redirectURI
 };
 
 async function GetDiscordToken() {

@@ -25,9 +25,8 @@ function handleClick(url, open = '_self') {
 
 function ChangeButton() {
     const groupUrl = 'https://discord.gg/VAfjrWUcZG';
-    //const authUrl = `https://discord.com/api/oauth2/authorize?client_id=962607441382625360&redirect_uri=http%3A%2F%2Fchronica-web.vercel.app%2Fgetuser&response_type=code&scope=identify`;
-    //개발용 링크▼
-    const authUrl = 'https://discord.com/api/oauth2/authorize?client_id=962607441382625360&redirect_uri=http%3A%2F%2Flocalhost%3A3030%2Fgetuser&response_type=code&scope=identify&prompt=none';
+    const authUrl = `https://discord.com/api/oauth2/authorize?client_id=962607441382625360&redirect_uri=http%3A%2F%2Fchronica-web.vercel.app%2Fgetuser&response_type=code&scope=identify`;
+    //const authUrl = 'https://discord.com/api/oauth2/authorize?client_id=962607441382625360&redirect_uri=http%3A%2F%2Flocalhost%3A3030%2Fgetuser&response_type=code&scope=identify&prompt=none';
     const [useButtonName, setButtonName] = useState(null);
     const [useUrl, setUrl] = useState(null);
     const [useOpen, setOpen] = useState(null);

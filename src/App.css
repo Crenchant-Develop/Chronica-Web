@@ -62,42 +62,38 @@
 }
 
 body {
-  background-color: hsl(240, 25%, 25%);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background-color: black;
-}
-
-button {
-  background-color: hsl(0, 0%, 50%);
-  border: 0.1em solid hsl(0, 0%, 50%);
-  padding: 10px 20px;
-  margin: 4px;
-  border-radius: 0.12em;
-  text-decoration: none;
-  text-align: center;
-  font-size: medium;
-}
-
-button:hover {
-  background-color: #ffffff;
-  border: 0.1em solid #ffffff;
+	background-color: hsl(240, 25%, 25%);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .main {
-  white-space: pre-wrap;
-  text-align: center;
-  font-family: 'Pretendard Regular';
-  font-size: calc(10px + 2vmin);
-  color: white;
+	white-space: pre-wrap;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-bottom: 5vh;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	box-shadow: 0 0 10px black;
 }
 
 .context {
-  font-family: 'Pretendard Regular';
-  justify-content: center;
+	justify-content: center;
+}
+
+.wrapper {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #606060;
+	box-shadow: 0 0 10px black;
+}
+
+.main, .context, .wrapper {
+	text-align: center;
+	font-family: 'Pretendard Regular';
+	background-color: #202020;
 }

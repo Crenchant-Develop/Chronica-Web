@@ -1,12 +1,19 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { ThemeProvider } from '@mui/material/styles';
+import Theme from '../Theme';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import '../App.css';
+
+const devRedirectURI = `http://localhost:3030/getuser`;
+//const redirectURI = `http://chronica-web.vercel.app/getuser`;
 
 const config = {
   "clientId": "962607441382625360",
   'clientSecret': 'm8bzU6EnND-XGDlJRVGyFSzfyCqvOg03',
-  "redirectUri": "http://chronica-web.vercel.app/getuser"
+  "redirectUri": devRedirectURI
 };
 
 async function GetDiscordToken() {
@@ -58,14 +65,18 @@ export default function ShowUser() {
 
   return (
     <div className="main">
-      <h2>{userName}님 환영합니다!</h2>
-      <h5>이제부터 Chronica를 이용하실 수 있습니다.</h5>
-      <Link to="/stat">
-        <button>스탯포인트 분배</button>
-      </Link>
-      <Link to="/">
-        <button>메인 화면으로</button>
-      </Link>
+      <h2>NETEA</h2>
+      <h5>네티아의 일대기를 만드는 것은 {userName}님입니다.</h5>
+      <Stack spacing={2} direction="row" className="context">
+        <ThemeProvider theme={Theme}>
+          <Link to="/stat" style={{ textDecoration: 'none' }}>
+            <Button variant="contained" size="large">스탯포인트 분배</Button>
+          </Link>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button variant="contained" size="large">메인 화면으로</Button>
+          </Link>
+        </ThemeProvider>
+      </Stack>
     </div>
   );
 }

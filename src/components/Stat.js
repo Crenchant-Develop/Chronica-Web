@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { ThemeProvider } from '@mui/material/styles';
+import Theme from '../Theme';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import '../App.css';
 
 var diceList = [];
@@ -22,10 +26,14 @@ export default class Stat extends React.Component {
                 <div className="context">
                     <h4>{this.state.text}</h4>
                 </div>
-                <button onClick={this.diceEvent}>스탯포인트 분배</button>
-                <Link to="/">
-                    <button>메인 화면으로</button>
-                </Link>
+                <Stack spacing={2} direction="row" className="context">
+                    <ThemeProvider theme={Theme}>
+                        <Button variant="contained" size="large" onClick={this.diceEvent}>스탯포인트 분배</Button>
+                        <Link to="/" style={{ textDecoration: 'none' }}>
+                            <Button variant="contained" size="large">메인 화면으로</Button>
+                        </Link>
+                    </ThemeProvider>
+                </Stack>
             </div>
         );
     }

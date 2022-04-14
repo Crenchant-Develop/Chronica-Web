@@ -6,7 +6,7 @@ import '../App.css';
 const config = {
   "clientId": "962607441382625360",
   'clientSecret': 'm8bzU6EnND-XGDlJRVGyFSzfyCqvOg03',
-  "redirectUri": "http://netea-chronica.github.io/getuser"
+  "redirectUri": "chronika-web.vercel.app/getuser"
 };
 
 async function GetDiscordToken() {

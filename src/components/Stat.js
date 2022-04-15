@@ -48,7 +48,7 @@ export default class Stat extends React.Component {
             var resultText = prefix + diceList.toString() + "입니다. 저런!";
             diceList = [];
         } else {
-            resultText = prefix + diceList.join(" + ") + " = " + diceList.reduce((a, b) => (a + b)) + "입니다.";
+            resultText = prefix + diceList.reduce((a, b) => (a + b)) + "입니다.";
             diceList = [];
         }
 

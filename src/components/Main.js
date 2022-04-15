@@ -37,7 +37,7 @@ function ChangeButton() {
         return (
             <Button variant="contained" size="large" onClick={(event) => {
                 event.stopPropagation();
-                window.open(authUrl, "_blank");
+                window.open(authUrl, "_self");
             }}>
                 디스코드 로그인
             </Button>

@@ -9,6 +9,10 @@ const Theme = createTheme({
       main: '#706080',
     },
   },
+
+  typography: {
+    fontFamily: 'Pretendard-Regular',
+  },
 });
 
 export default Theme;

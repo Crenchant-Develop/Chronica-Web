@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from '../Theme';
 import Stack from '@mui/material/Stack';
@@ -28,10 +27,7 @@ export default class Stat extends React.Component {
                 </div>
                 <Stack spacing={2} direction="row" className="context">
                     <ThemeProvider theme={Theme}>
-                        <Button variant="contained" size="large" onClick={this.diceEvent}>스탯포인트 분배</Button>
-                        <Link to="/" style={{ textDecoration: 'none' }}>
-                            <Button variant="contained" size="large">메인 화면으로</Button>
-                        </Link>
+                        <Button variant="contained" size="large" onClick={this.diceEvent}>분배하기</Button>
                     </ThemeProvider>
                 </Stack>
             </div>

@@ -66,7 +66,7 @@ export default function ShowUser() {
   return (
     <div className="main">
       <h2>NETE▲</h2>
-      <h5>네티아의 일대기를 만드는 것은 {userName}님입니다.</h5>
+      <h5>당신이 만드는 일대기, 네티아</h5>
       <Stack spacing={2} direction="row" className="context">
         <ThemeProvider theme={Theme}>
           <Button variant="contained" size="large" onClick={(event) => {

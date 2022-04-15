@@ -7,7 +7,7 @@ export default function Logo() {
     return (
         <div className="logo">
             <Link to="/" style={{ textDecoration: 'none' }}>
-                <img src={LogoImage} width="50" height="50" alt="logo" />
+                <img src={LogoImage} width="20%" alt="logo" />
             </Link>
         </div>
     );

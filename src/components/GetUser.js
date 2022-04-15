@@ -69,11 +69,12 @@ export default function ShowUser() {
       <h5>네티아의 일대기를 만드는 것은 {userName}님입니다.</h5>
       <Stack spacing={2} direction="row" className="context">
         <ThemeProvider theme={Theme}>
+          <Button variant="contained" size="large" onClick={(event) => {
+            event.stopPropagation();
+            window.open("https://discord.gg/VAfjrWUcZG", "_blank");
+          }}>서버 방문하기</Button>
           <Link to="/stat" style={{ textDecoration: 'none' }}>
             <Button variant="contained" size="large">스탯포인트 분배</Button>
-          </Link>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <Button variant="contained" size="large">메인 화면으로</Button>
           </Link>
         </ThemeProvider>
       </Stack>

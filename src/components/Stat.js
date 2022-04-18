@@ -37,20 +37,15 @@ export default class Stat extends React.Component {
     diceEvent = () => {
 
         var repeatRoll = Math.floor(Math.random() * 5) + 1;
-        var prefix = "당신의 초기 스탯포인트는\n"
+        var prefix = "당신의 초기 스탯포인트는 "
 
         for (var i = 0; i < repeatRoll; i++) {
             var dice = Math.floor(Math.random() * 6) + 1;
             diceList.push(dice);
         }
 
-        if (diceList.length === 1) {
-            var resultText = prefix + diceList.toString() + "입니다. 저런!";
-            diceList = [];
-        } else {
-            resultText = prefix + diceList.reduce((a, b) => (a + b)) + "입니다.";
-            diceList = [];
-        }
+        var resultText = prefix + diceList.reduce((a, b) => (a + b)) + "입니다.";
+        diceList = [];
 
         this.setState({
             text: resultText,

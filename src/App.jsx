@@ -5,8 +5,8 @@ import React from "react";
 import { Config } from './components/GetUser';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Main from './pages/Main';
-import Login from './pages/Login';
+import Main from './_pages/Main';
+import Login from './_pages/Login';
 
 
 import {

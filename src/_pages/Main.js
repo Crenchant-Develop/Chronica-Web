@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import Theme from '../components/Theme'
 
 
+//메인페이지
 function Main(props) {
   const userName = sessionStorage.getItem('userName');
   return (

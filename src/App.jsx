@@ -2,7 +2,7 @@
 import React from "react";
 
 //Pages
-import GetUser, { Config } from './Components/GetUser';
+//import GetUser, { Config } from './Components/GetUser';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Pages/Main';

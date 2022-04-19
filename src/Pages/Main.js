@@ -5,7 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
-import Theme from '../Components/Theme'
+import Theme from '../components/Theme'
 
 
 function Main(props) {

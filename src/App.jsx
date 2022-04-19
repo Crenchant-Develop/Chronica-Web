@@ -2,11 +2,11 @@
 import React from "react";
 
 //Pages
-import { Config } from './Components/GetUser';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Main from './Pages/Main';
-import Login from './Pages/Login';
+import { Config } from './components/GetUser';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './pages/Main';
+import Login from './pages/Login';
 
 
 import {

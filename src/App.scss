@@ -12,38 +12,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-.header {
-  white-space: pre-wrap;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 5vh;
-  font-size: calc(1vw + 2vmin);
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #606060;
-}
-
 .container {
   color: white;
-  text-align: center;
   background-color: #202020;
   box-shadow: 0 0 10px black;
 
-  .context {
-    justify-content: center;
+  .header {
+    white-space: pre-wrap;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: calc(1vw + 2vmin);
+  }
+
+  .context{
+    text-align: center;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #606060;
   }
 
   .logo{
-    text-align: left;
+    width: 10px;
     text-decoration: none;
-    padding: 10px;
+    padding: 0px;
 
     z-index: -1;
   }

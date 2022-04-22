@@ -28,7 +28,7 @@ function LoginIcon(props) {
 
 function LoginButton(props) {
   return (
-    <Stack spacing={2} direction="row" className="context">
+    <Stack spacing={2} direction="row">
       <ThemeProvider theme={Theme}>
         <Button className={props.className} startIcon={
           <LoginIcon 

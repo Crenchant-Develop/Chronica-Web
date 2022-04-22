@@ -1,20 +1,25 @@
-import React from 'react';
-import { Navigate, Routes, Route, } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useAsync } from "react-async";
+import { Navigate } from "react-router-dom";
 
-import { ThemeProvider } from '@mui/material/styles';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-
-import Theme from '../components/Theme'
-
+//defined components
+import { GetUserName } from '../components/GetUser';
 
 //메인페이지
-function Main(props) {
-  const userName = sessionStorage.getItem('userName');
+function Main() {
+  let [userName, setUserName] = useState(undefined);
+
+  useEffect(() => {
+    (async () => {
+      //코드가 두번 실행되는 버그가 있음 원인분석이 필요함
+      setUserName(await GetUserName());
+    })();
+  }, []);
+
   return (
     <article>
-      <div>
-        {userName? userName : "모험가"}님! 네티아 세계에서 무엇을 하고 싶으세요?
+      <div className='context'>
+        {userName ? userName : "모험가"}님! 네티아 세계에서 무엇을 하고 싶으세요?
       </div>
     </article>
   );

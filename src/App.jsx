@@ -1,5 +1,6 @@
 //core
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 //Pages
 import { Config } from './components/GetUser';
@@ -8,7 +9,6 @@ import Footer from './components/Footer';
 import Main from './pages/Main';
 import Login from './pages/Login';
 
-import { Routes, Route } from "react-router-dom";
 
 //Assets
 import LogoImage from "./logo.svg";

@@ -18,6 +18,11 @@ function setCookie(key, value) {
   })
 }
 
+function getCookie(cookieName) {
+  cookies.load(cookieName);
+  return;
+}
+
 //메인페이지
 function Main() {
   let [userName, setUserName] = useState(undefined);

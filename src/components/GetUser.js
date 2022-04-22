@@ -1,8 +1,7 @@
 import axios from 'axios';
-import { async } from './GetUser';
 
 const RootURI = `${window.location.origin}/`;
-const LoginURI = `${window.location.origin}/login`;
+//const LoginURI = `${window.location.origin}/login`;
 const DefaultURI = `${RootURI}`;
 
 export const Config = {
@@ -79,8 +78,6 @@ export async function GetUser() {
 
   //유저 데이터 가져오기
   const user = await axios.get("https://discord.com/api/users/@me", authData);
-  sessionStorage.setItem('userName', user.data.username);
-
   return user.data; //유저 데이터를 리턴
 }
 

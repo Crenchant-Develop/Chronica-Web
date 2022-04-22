@@ -2,7 +2,7 @@
 import React from "react";
 
 //Pages
-import { Config, GetDiscordToken, GetUserName } from './components/GetUser';
+import { Config } from './components/GetUser';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './pages/Main';

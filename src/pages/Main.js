@@ -5,6 +5,7 @@ import cookies from 'react-cookies';
 import { GetUserName } from '../components/GetUser';
 
 //코드 이해를 돕기위해 모듈화 안했음. 곧 모듈화 예정
+//쿠키저장
 function setCookie(key, value) {
   var expires = new Date;
   expires.setFullYear(expires.getFullYear() + 10);
@@ -18,6 +19,7 @@ function setCookie(key, value) {
   })
 }
 
+//쿠키가져오기
 function getCookie(cookieName) {
   cookies.load(cookieName);
   return;

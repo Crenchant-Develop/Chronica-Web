@@ -4,6 +4,7 @@ import cookies from 'react-cookies';
 //defined components
 import { GetUserName } from '../components/GetUser';
 
+
 //코드 이해를 돕기위해 모듈화 안했음. 곧 모듈화 예정
 //쿠키저장
 function setCookie(key, value) {
@@ -21,16 +22,18 @@ function setCookie(key, value) {
 
 //쿠키가져오기
 function getCookie(cookieName) {
-  cookies.load(cookieName);
-  return;
+  return cookies.load(cookieName);
 }
 
 //메인페이지
 function Main() {
-  let [userName, setUserName] = useState(undefined);
+  let [userName, setUserName] = useState(getCookie('userName'));
 
   const onUserNamer = () => {
     (async () => {    //코드가 두번 실행되는 버그가 있음 원인분석이 필요함
+      if (userName) {
+        return;
+      }
       setUserName(await GetUserName());
       setCookie('userName', userName);
     })();

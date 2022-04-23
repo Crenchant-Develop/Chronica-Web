@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { GetUserName } from '../components/GetUser';
 import { getCookie, setCookie } from '../components/Cookies';
 
-
+//로그아웃을 구현할 것.
 //메인페이지
 function Main() {
   let [userName, setUserName] = useState(undefined);

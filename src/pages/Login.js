@@ -3,10 +3,5 @@ import LoginButton from '../components/LoginButton'
 
 //로그인 페이지
 export default function Login(props) {
-  // const RootURI = `${window.location.origin}/`;
-  // const isLogined = getCookie('userName') ? true : false;
-  // if (isLogined) {
-  //   window.open(RootURI, "_self");
-  // }
   return <LoginButton className="loginButton" authURL={props.authURL} />;
 }

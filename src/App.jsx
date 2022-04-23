@@ -16,7 +16,6 @@ import './App.scss'; /* ◀ "CSS to SCSS" be has been converted. For SASS! */
 
 
 class App extends React.Component {
-
   render() {
     return (
       <div className="App">

@@ -7,15 +7,11 @@ import { getCookie, setCookie } from '../components/Cookies';
 
 //메인페이지
 function Main() {
-  let [userName, setUserName] = useState(getCookie('userName'));
+  let [userName, setUserName] = useState(undefined);
 
   const onUserNamer = () => {
     (async () => {    //코드가 두번 실행되는 버그가 있음 원인분석이 필요함
-      if (userName) {
-        return;
-      }
       setUserName(await GetUserName());
-      setCookie('userName', userName);
     })();
   };
 

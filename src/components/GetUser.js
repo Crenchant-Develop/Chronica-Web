@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { setCookie } from './Cookies';
 
 const RootURI = `${window.location.origin}/`;
 //const LoginURI = `${window.location.origin}/login`;
@@ -29,7 +30,7 @@ export async function GetDiscordToken() {
   if(!code)
   {
     console.warn('현재 토큰 정보를 가져올 수 없는 URI 상태입니다');
-    window.open(`${window.location.origin}/login`, "_self");
+    window.open(RootURI+'login', "_self");
     return undefined;
   }
 
@@ -86,7 +87,8 @@ export async function GetUserName() {
     const user = await GetUser();
 
     console.log(`로그인한 유저의 이름은 ${user.username} 입니다`);
-    return `${user.username}`;
+    setCookie('userName', user.username);
+    return user.username;
   } catch (error) {
     console.error("로그인상태를 확인하세요. 유저정보를 가져올 수 없습니다. Error: from GetUser()");
 

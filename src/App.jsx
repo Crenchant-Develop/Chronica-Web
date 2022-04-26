@@ -22,7 +22,7 @@ class App extends React.Component {
         <div className="container">
           <Header logoImage={LogoImage} />
           <Routes>
-            <Route exact path="/" element={<Main/>} />
+            <Route exact path="/" element={<Main />} />
             <Route path="/login" element={<Login authURL={Config.authURL} />} />
           </Routes>
           <Footer />

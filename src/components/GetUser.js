@@ -27,10 +27,9 @@ export async function GetDiscordToken() {
 
   let splitedCode = window.location.search.split('?code=');
   let code = splitedCode[1];
-  if(!code)
-  {
+  if (!code) {
     console.warn('현재 토큰 정보를 가져올 수 없는 URI 상태입니다');
-    window.open(RootURI+'login', "_self");
+    window.open(RootURI + 'login', "_self");
     return undefined;
   }
 
@@ -55,7 +54,7 @@ export async function GetDiscordToken() {
     data: params
   }).then(async (discordJson) => {
     return discordJson.data;
-  }).catch(error=>{
+  }).catch(error => {
     //Config.redirectUri = LoginURI;
     return undefined;
   });
@@ -69,7 +68,7 @@ export async function GetDiscordToken() {
 }
 
 export async function GetUser() {
-  
+
   const access_token = await GetDiscordToken();
   const authData = {
     headers: {

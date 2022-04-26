@@ -1,4 +1,3 @@
-import { getCookie } from '../components/Cookies';
 import LoginButton from '../components/LoginButton'
 
 //로그인 페이지

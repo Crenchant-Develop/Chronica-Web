@@ -3,8 +3,8 @@ import Logo from './Logo';
 export default function Header(props) {
   return (
     <header className="header">
-      <Logo className="logo" logoImage={props.logoImage} />
       <div className="context">
+        <Logo className="logo" logoImage={props.logoImage} />
         <h1>
           NETE▲
         </h1>

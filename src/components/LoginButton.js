@@ -16,7 +16,6 @@ function LoginIcon(props) {
 }
 
 function LoginButton(props) {
-
   return (
     <Stack
       spacing={2}

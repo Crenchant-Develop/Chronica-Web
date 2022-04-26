@@ -6,6 +6,7 @@
 }
 
 body {
+  margin: 0;
   background-color: hsl(240, 25%, 25%);
   font-family: 'Pretendard-Regular';
   -webkit-font-smoothing: antialiased;
@@ -18,14 +19,16 @@ body {
   box-shadow: 0 0 10px black;
 
   .header {
-    top: 0;
-    left: 0;
-    right: 0;
+    padding: 2vw;
     font-size: calc(1vw + 2vmin);
   }
 
   .context {
     text-align: center;
+
+    h1 {
+      display: inline;
+    }
   }
 
   .footer {
@@ -37,9 +40,10 @@ body {
   }
 
   .logo {
-    width: 10px;
+    width: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
     text-decoration: none;
-    padding: 0px;
-    z-index: -1;
   }
 }

@@ -9,11 +9,9 @@ import Footer from './components/Footer';
 import Main from './pages/Main';
 import Login from './pages/Login';
 
-
 //Assets
 import LogoImage from "./logo.svg";
 import './App.scss'; /* ◀ "CSS to SCSS" be has been converted. For SASS! */
-
 
 class App extends React.Component {
   render() {

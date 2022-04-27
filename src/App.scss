@@ -19,11 +19,12 @@ body {
   box-shadow: 0 0 10px black;
 
   .header {
-    padding: 2vw;
+    padding-top: 2vw;
     font-size: calc(1vw + 2vmin);
   }
 
   .context {
+    padding-bottom: 2vw;
     text-align: center;
 
     h1 {
@@ -40,7 +41,7 @@ body {
   }
 
   .logo {
-    width: 10%;
+    width: 8%;
     position: fixed;
     top: 0;
     left: 0;

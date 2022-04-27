@@ -17,37 +17,39 @@ function LoginIcon(props) {
 
 function LoginButton(props) {
   return (
-    <Stack
-      spacing={2}
-      direction="row"
-      justifyContent="center"
-      alignItems="center">
-      <ThemeProvider theme={Theme}>
-        <Button className={props.className} startIcon={
-          <LoginIcon
-            fontSize="inherit"
-            style={
-              {
-                top: '50%',
-                transform: 'scale(1.5)'
+    <article className="context">
+      <Stack
+        spacing={2}
+        direction="row"
+        justifyContent="center"
+        alignItems="center">
+        <ThemeProvider theme={Theme}>
+          <Button className={props.className} startIcon={
+            <LoginIcon
+              fontSize="inherit"
+              style={
+                {
+                  top: '50%',
+                  transform: 'scale(1.5)'
+                }
               }
-            }
-          />
-        }
-
-          style={
-            { minWidth: '10vw', minHeight: '4vw' }
+            />
           }
-          variant="contained"
-          size="large"
-          onClick={(event) => {
-            event.stopPropagation();
-            window.open(props.authURL, "_self");
-          }}>
-          디스코드 로그인
-        </Button>
-      </ThemeProvider>
-    </Stack>
+
+            style={
+              { minWidth: '10vw', minHeight: '4vw' }
+            }
+            variant="contained"
+            size="large"
+            onClick={(event) => {
+              event.stopPropagation();
+              window.open(props.authURL, "_self");
+            }}>
+            디스코드 로그인
+          </Button>
+        </ThemeProvider>
+      </Stack>
+    </article>
   );
 }
 

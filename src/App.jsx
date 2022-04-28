@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 import Main from './pages/Main';
 import Login from './pages/Login';
-import Inventory from './pages/Inventory';
+import { TestButton, Inventory } from './pages/Inventory';
 
 //Assets
 import LogoImage from "./logo.svg";
@@ -24,10 +24,13 @@ class App extends React.Component {
           <Routes>
             <Route exact path="/" element={<Main />} />
             <Route path="/login" element={<Login authURL={Config.authURL} />} />
-            <Route path="/inventory" element={<Inventory />} />
+            <Route path="/inventory" element={<TestButton />} />
           </Routes>
           <Footer />
         </div>
+        <Routes>
+          <Route path="/inventory" element={<Inventory />} />
+        </Routes>
       </div>
     );
   }

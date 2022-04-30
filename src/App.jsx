@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import { Config } from './components/GetUser';
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Lorem from './components/Lorem';
 import Footer from './components/Footer';
 
 import Main from './pages/Main';
@@ -19,15 +20,15 @@ import './App.scss'; /* ◀ "CSS to SCSS" be has been converted. For SASS! */
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" id="body-wrapper">
         <div className="container">
-          <Nav />
-          <Header logoImage={LogoImage} />
-          <Routes>
-            <Route exact path="/" element={<Main />} />
-            <Route path="/login" element={<Login authURL={Config.authURL} />} />
-            <Route path="/inventory" element={<TestButton />} />
-          </Routes>
+            <Nav />
+            <Header logoImage={LogoImage} />
+            <Routes>
+              <Route exact path="/" element={<Main />} />
+              <Route path="/login" element={<Login authURL={Config.authURL} />} />
+              <Route path="/inventory" element={<TestButton />} />
+            </Routes>
           <Footer />
         </div>
         <Routes>

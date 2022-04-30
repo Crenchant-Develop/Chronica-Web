@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 //Pages
 import { Config } from './components/GetUser';
 import Header from './components/Header';
+import Nav from './components/Nav';
 import Footer from './components/Footer';
 
 import Main from './pages/Main';
@@ -28,6 +29,7 @@ class App extends React.Component {
           </Routes>
           <Footer />
         </div>
+        <Nav />
         <Routes>
           <Route path="/inventory" element={<Inventory />} />
         </Routes>

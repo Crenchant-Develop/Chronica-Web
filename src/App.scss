@@ -13,6 +13,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+nav {
+  padding: 1vw;
+}
+
 .container {
   color: white;
   background-color: #202020;
@@ -20,7 +24,7 @@ body {
 
   .header {
     padding-top: 1vw;
-    font-size: calc(1vw + 2vmin);
+    font-size: calc(1vw + 1vmin);
   }
 
   .context {

@@ -20,21 +20,25 @@ import './App.scss'; /* ◀ "CSS to SCSS" be has been converted. For SASS! */
 class App extends React.Component {
   render() {
     return (
-      <div className="App" id="body-wrapper">
+      <div className="App" id="wrapper">
         <div className="container">
-            <Nav />
-            <Header logoImage={LogoImage} />
-            <Routes>
-              <Route exact path="/" element={<Main />} />
-              <Route path="/login" element={<Login authURL={Config.authURL} />} />
-              <Route path="/inventory" element={<TestButton />} />
-            </Routes>
+          <Header logoImage={LogoImage} />
+          <Nav />
+          <Routes>
+            <Route exact path="/" element={<Main />} />
+            <Route path="/login" element={<Login authURL={Config.authURL} />} />
+            <Route path="/inventory" element={<TestButton />} />
+          </Routes>
+        </div>
+        <div className="section">
+          <Routes>
+            <Route path="/inventory" element={<Inventory />} />
+          </Routes>
+        </div>
+        <div className="container">
           <Footer />
         </div>
-        <Routes>
-          <Route path="/inventory" element={<Inventory />} />
-        </Routes>
-      </div>
+      </div >
     );
   }
 }

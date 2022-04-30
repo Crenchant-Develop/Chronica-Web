@@ -35,7 +35,7 @@ export default function Nav() {
                 anchorEl={anchorEl}
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
-                MenuListProps={{ onMouseLeave: handleClose }}
+                MenuListProps={{ onClick: handleClose }}
             >
                 <MenuItem onClick={handleClose}>응애</MenuItem>
                 <MenuItem onClick={handleClose}>나 애기메뉴</MenuItem>

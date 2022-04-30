@@ -27,7 +27,7 @@ export default function Nav() {
                 onClick={handleClick}
                 onMouseOver={handleClick}
             >
-                <Fab aria-label="edit">
+                <Fab aria-label="menu">
                     <MenuIcon />
                 </Fab>
             </Button>

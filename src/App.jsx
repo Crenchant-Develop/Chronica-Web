@@ -21,6 +21,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="container">
+          <Nav />
           <Header logoImage={LogoImage} />
           <Routes>
             <Route exact path="/" element={<Main />} />
@@ -29,7 +30,6 @@ class App extends React.Component {
           </Routes>
           <Footer />
         </div>
-        <Nav />
         <Routes>
           <Route path="/inventory" element={<Inventory />} />
         </Routes>

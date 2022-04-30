@@ -6,7 +6,7 @@ import { getCookie, setCookie } from '../components/Cookies';
 
 import { Link } from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';
-import Theme from '../components/Theme';
+import { Theme } from '../components/Theme';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 

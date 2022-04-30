@@ -25,7 +25,6 @@ export default function Nav() {
                 aria-owns={anchorEl ? "simple-menu" : undefined}
                 aria-haspopup="true"
                 onClick={handleClick}
-                onMouseOver={handleClick}
             >
                 <Fab aria-label="menu">
                     <MenuIcon />

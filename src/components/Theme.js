@@ -1,5 +1,5 @@
+import '../App.scss';
 import { createTheme } from '@mui/material/styles';
-
 
 const Theme = createTheme({
   palette: {
@@ -16,4 +16,10 @@ const Theme = createTheme({
   },
 });
 
-export default Theme;
+const TitleTheme = createTheme({
+  typography: {
+    fontFamily: 'Iceland-Regular',
+  },
+});
+
+export { Theme, TitleTheme };

@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Iceland-Regular';
+  src: url('./static/fonts/Iceland-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background-color: hsl(240, 25%, 25%);

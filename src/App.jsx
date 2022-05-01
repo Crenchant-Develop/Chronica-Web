@@ -30,6 +30,7 @@ class App extends React.Component {
           </Routes>
         </div>
         <div className="section">
+          <Lorem />
           <Routes>
             <Route path="/inventory" element={<Inventory />} />
           </Routes>

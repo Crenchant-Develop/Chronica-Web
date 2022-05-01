@@ -33,6 +33,8 @@ body {
 }
 
 .section {
+  width: 90%;
+  margin: 0 auto;
   padding-bottom: 3vw;
 }
 
@@ -49,6 +51,11 @@ nav {
   background: linear-gradient(to top, #fff47e, #ff7e49);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.transparent {
+  background-color: #20202000;
+  box-shadow: none;
 }
 
 .container {

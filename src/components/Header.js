@@ -1,4 +1,3 @@
-import Logo from './Logo';
 import { TitleTheme } from "./Theme";
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -7,7 +6,6 @@ export default function Header(props) {
     <ThemeProvider theme={TitleTheme}>
       <header className="header">
         <div className="context">
-          <Logo className="logo" />
           <h1>
             NETE
             <div className='delta'>

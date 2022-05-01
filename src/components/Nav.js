@@ -33,7 +33,7 @@ export default function Nav(props) {
         <ThemeProvider theme={Theme}>
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar style={{
-                    backgroundColor: "#20202000",
+                    backgroundColor: "#202020",
                     boxShadow: "none",
                 }}>
                     <Toolbar>
@@ -61,7 +61,16 @@ export default function Nav(props) {
                             <MenuItem>문제라도?</MenuItem>
                         </Menu>
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            News
+
+                            <div className="context">
+                                <h1>
+                                    NETE
+                                    <div className='delta'>
+                                        △
+                                    </div>
+                                </h1>
+                                <h5>당신이 만드는 일대기, 네티아</h5>
+                            </div>
                         </Typography>
                         <Button color="inherit">Login</Button>
                         <Link className={props.className} to="/">

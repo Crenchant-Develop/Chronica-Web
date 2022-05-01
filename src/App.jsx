@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 //Pages
 import { Config } from './components/GetUser';
 import Header from './components/Header';
-import Nav from './components/Nav';
+
 import Lorem from './components/Lorem';
 import Footer from './components/Footer';
 
@@ -20,19 +20,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" id="wrapper">
-        <div className="container">
           <Header />
-          <Nav />
           <Routes>
-<<<<<<< HEAD
-            <Route exact path="/" element={<Main />} />
-=======
             <Route path="/" element={<Main/>} />
->>>>>>> 4ae2f64 (no message)
             <Route path="/login" element={<Login authURL={Config.authURL} />} />
             <Route path="/inventory" element={<TestButton />} />
-          </Routes>
-        </div>
+          </Routes >
         <div className="section">
           <Lorem />
           <Routes>

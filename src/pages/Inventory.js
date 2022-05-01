@@ -36,9 +36,13 @@ function TestButton() {
         alignItems="center">
         <ThemeProvider theme={Theme}>
           <Button variant="contained" size="large" onClick={(event) => {
-          }}>직렬화</Button>
+          }}>
+            직렬화
+          </Button>
           <Button variant="contained" size="large" onClick={(event) => {
-          }}>역직렬화</Button>
+          }}>
+            역직렬화
+          </Button>
         </ThemeProvider>
       </Stack>
     </article>

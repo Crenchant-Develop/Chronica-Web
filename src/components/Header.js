@@ -4,10 +4,10 @@ import Nav from './Nav';
 
 export default function Header(props) {
   return (
-    <ThemeProvider theme={TitleTheme}>
-      <header className="header container">
-      <Nav/>
-      </header>
-    </ThemeProvider>
+    <header className="header" id="wrapper">
+      <ThemeProvider theme={TitleTheme}>
+        <Nav />
+      </ThemeProvider>
+    </header>
   );
 }

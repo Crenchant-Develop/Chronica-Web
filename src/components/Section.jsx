@@ -1,11 +1,9 @@
 import React from "react";
-import Lorem from './Lorem';
 
 function Section(props) {
-  return <div className="section">
+  return <article className="section">
     {props.children}
-    <Lorem />
-  </div>;
+  </article>;
 }
 
 export default Section;

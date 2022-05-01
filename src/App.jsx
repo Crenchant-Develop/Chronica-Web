@@ -20,8 +20,8 @@ import './App.scss'; /* ◀ "CSS to SCSS" be has been converted. For SASS! */
 class App extends React.Component {
   render() {
     return (
-      <div className="App" id="wrapper">
-        <Header />
+      <div className="App">
+        {/* <Header /> */}
         <Section>
           <Routes>
             <Route path="/" element={<Main />} />
@@ -29,8 +29,8 @@ class App extends React.Component {
             <Route path="/inventory" element={<Inventory />} />
           </Routes >
         </Section>
-        <Footer className="container"/>
-      </div >
+        <Footer className="footer" id="wrapper"/>
+      </div>
     );
   }
 }

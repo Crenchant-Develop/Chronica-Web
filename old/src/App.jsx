@@ -29,6 +29,7 @@ import './App.scss'; /* ◀ "CSS to SCSS" be has been converted. For SASS! */
 class App extends React.Component {
   render() {
     return (
+<<<<<<< HEAD:old/src/App.jsx
       <div className="App" id="wrapper">
 <<<<<<< HEAD:old/src/App.jsx
         <div className="container">
@@ -49,6 +50,10 @@ class App extends React.Component {
           <Routes>
 =======
         <Header />
+=======
+      <div className="App">
+        {/* <Header /> */}
+>>>>>>> ec43922 (코드정리):src/App.jsx
         <Section>
           <Routes>
             <Route path="/" element={<Main />} />
@@ -57,8 +62,8 @@ class App extends React.Component {
             <Route path="/inventory" element={<Inventory />} />
           </Routes >
         </Section>
-        <Footer className="container"/>
-      </div >
+        <Footer className="footer" id="wrapper"/>
+      </div>
     );
   }
 }

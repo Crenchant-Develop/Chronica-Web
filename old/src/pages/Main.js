@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 //defined components
 import { GetUserName } from '../components/GetUser';
 import { getCookie, setCookie } from '../components/Cookies';
+import Lorem from './../components/Lorem';
 
 import { Link } from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';
@@ -14,7 +15,8 @@ function Main() {
   let [userName, setUserName] = useState(undefined);
 
   const onUserNamer = () => {
-    (async () => { //코드가 두 번 실행되는 버그가 있음. 원인 분석이 필요함
+    (async () => { 
+      //코드가 두 번 실행되는 버그가 있음. 원인 분석이 필요함
       setUserName(await GetUserName());
     })();
   };
@@ -22,28 +24,8 @@ function Main() {
   useEffect(onUserNamer, [onUserNamer]);
 
   return (
-    <article className="context">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    <div className="main context">
+
       <br />
       {userName ? userName : "모험가"}님! 네티아 세계에서 무엇을 하고 싶으세요?<br /><br />
       <Stack
@@ -61,7 +43,9 @@ function Main() {
           </Link>
         </ThemeProvider>
       </Stack>
-    </article>
+
+      <Lorem />
+    </div>
   );
 };
 

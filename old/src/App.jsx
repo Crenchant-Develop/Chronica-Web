@@ -3,23 +3,34 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 //Pages
+<<<<<<< HEAD:old/src/App.jsx
 import { Config } from './components/GetUser';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Lorem from './components/Lorem';
 import Footer from './components/Footer';
 
+=======
+import Inventory from './pages/Inventory';
+>>>>>>> 908b533 (일단 커밋):src/App.jsx
 import Main from './pages/Main';
 import Login from './pages/Login';
-import { TestButton, Inventory } from './pages/Inventory';
+
+//components
+import Header from './components/Header';
+import Section from './components/Section';
+import Footer from './components/Footer';
+import { Config } from './components/GetUser';
 
 //Assets
 import './App.scss'; /* ◀ "CSS to SCSS" be has been converted. For SASS! */
+
 
 class App extends React.Component {
   render() {
     return (
       <div className="App" id="wrapper">
+<<<<<<< HEAD:old/src/App.jsx
         <div className="container">
           <Header />
           <Nav />
@@ -36,12 +47,17 @@ class App extends React.Component {
         <div className="section">
           <Lorem />
           <Routes>
+=======
+        <Header />
+        <Section>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/login" element={<Login authURL={Config.authURL} />} />
+>>>>>>> 908b533 (일단 커밋):src/App.jsx
             <Route path="/inventory" element={<Inventory />} />
-          </Routes>
-        </div>
-        <div className="container">
-          <Footer />
-        </div>
+          </Routes >
+        </Section>
+        <Footer className="container"/>
       </div >
     );
   }

@@ -23,6 +23,28 @@ function Main() {
 
   return (
     <article className="context">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       {userName ? userName : "모험가"}님! 네티아 세계에서 무엇을 하고 싶으세요?<br /><br />
       <Stack
         spacing={2}

@@ -24,7 +24,11 @@ class App extends React.Component {
           <Header />
           <Nav />
           <Routes>
+<<<<<<< HEAD
             <Route exact path="/" element={<Main />} />
+=======
+            <Route path="/" element={<Main/>} />
+>>>>>>> 4ae2f64 (no message)
             <Route path="/login" element={<Login authURL={Config.authURL} />} />
             <Route path="/inventory" element={<TestButton />} />
           </Routes>

@@ -45,7 +45,7 @@ function TestButton() {
   );
 };
 
-function Inventory() {
+export default function Inventory() {
   return (
     <>
       <br /><br />

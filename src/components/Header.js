@@ -7,7 +7,6 @@ export default function Header(props) {
     <ThemeProvider theme={TitleTheme}>
       <header className="header container">
       <Nav/>
-
       </header>
     </ThemeProvider>
   );

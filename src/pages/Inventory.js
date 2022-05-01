@@ -49,28 +49,30 @@ function Inventory() {
   return (
     <>
       <br /><br />
-      <TableContainer style={{ width: '50%', margin: 'auto' }} component={Paper}>
-        <Table aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>아이템</TableCell>
-              <TableCell align="right">ID</TableCell>
-              <TableCell align="right">수량</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
+      <ThemeProvider theme={Theme}>
+        <TableContainer style={{ width: '50%', margin: 'auto' }} component={Paper}>
+          <Table aria-label="simple table">
+            <TableHead>
               <TableRow>
-                <TableCell component="th">
-                  {row.name}
-                </TableCell>
-                <TableCell align="right">{row.id}</TableCell>
-                <TableCell align="right">{row.quantity}</TableCell>
+                <TableCell>아이템</TableCell>
+                <TableCell align="right">ID</TableCell>
+                <TableCell align="right">수량</TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow>
+                  <TableCell component="th">
+                    {row.name}
+                  </TableCell>
+                  <TableCell align="right">{row.id}</TableCell>
+                  <TableCell align="right">{row.quantity}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </ThemeProvider>
     </>
   );
 };

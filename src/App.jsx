@@ -14,7 +14,6 @@ import Login from './pages/Login';
 import { TestButton, Inventory } from './pages/Inventory';
 
 //Assets
-import LogoImage from "./logo.svg";
 import './App.scss'; /* ◀ "CSS to SCSS" be has been converted. For SASS! */
 
 class App extends React.Component {
@@ -22,7 +21,7 @@ class App extends React.Component {
     return (
       <div className="App" id="wrapper">
         <div className="container">
-          <Header logoImage={LogoImage} />
+          <Header />
           <Nav />
           <Routes>
             <Route exact path="/" element={<Main />} />

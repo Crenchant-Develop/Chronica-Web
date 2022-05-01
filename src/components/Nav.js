@@ -1,10 +1,12 @@
 import * as React from 'react';
-import Fab from '@mui/material/Fab';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+
+import { Theme } from "./Theme";
+import { ThemeProvider } from '@mui/material/styles';
 
 export default function Nav() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -21,25 +23,31 @@ export default function Nav() {
 
     return (
         <nav>
-            <Button
-                aria-owns={anchorEl ? "simple-menu" : undefined}
-                aria-haspopup="true"
-                onClick={handleClick}
-            >
-                <Fab aria-label="menu">
-                    <MenuIcon />
-                </Fab>
-            </Button>
-            <Menu
-                id="simple-menu"
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-                MenuListProps={{ onClick: handleClose }}
-            >
-                <MenuItem onClick={handleClose}>응애</MenuItem>
-                <MenuItem onClick={handleClose}>나 애기메뉴</MenuItem>
-            </Menu>
+            <ThemeProvider theme={Theme}>
+                <Button
+                    aria-owns={anchorEl ? "simple-menu" : undefined}
+                    onClick={handleClick}
+                >
+                    <MenuIcon sx={{ fontSize: 40 }} />
+                </Button>
+                <Menu
+                    PaperProps={{
+                        style: {
+                            width: 200
+                        },
+                    }}
+                    id="simple-menu"
+                    anchorEl={anchorEl}
+                    open={Boolean(anchorEl)}
+                    onClose={handleClose}
+                >
+                    <MenuItem>응애</MenuItem>
+                    <MenuItem>나 아기 메뉴</MenuItem>
+                    <MenuItem>테</MenuItem>
+                    <MenuItem>스</MenuItem>
+                    <MenuItem>트</MenuItem>
+                </Menu>
+            </ThemeProvider>
         </nav>
     );
 }

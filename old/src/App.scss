@@ -24,8 +24,8 @@ body {
   flex-direction: column;
   background-color: hsl(240, 25%, 25%);
   color: white;
-  
-  
+
+
   font-family: 'Pretendard-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -73,7 +73,7 @@ nav {
     font-size: calc(1vw + 1vmin);
   }
 
-   .context {
+  .context {
     padding-bottom: 1vw;
     text-align: center;
 
@@ -81,13 +81,16 @@ nav {
       display: inline;
     }
   }
+
   .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 3vw;
-  
-    color: #606060;
+
+    > .context {
+      color: #606060;
+    }
   }
 
 }

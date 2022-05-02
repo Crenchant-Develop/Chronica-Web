@@ -9,7 +9,7 @@ import Login from './pages/Login';
 
 //components
 import Header from './components/Header';
-import Section from './components/Section';
+import Sections from './components/Sections';
 import Footer from './components/Footer';
 import { Config } from './components/GetUser';
 
@@ -21,14 +21,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <Header /> */}
-        <Section>
+        {/* <!-- fixed-header 다음 아래에서 시작하도록 본문을 표시하는 법을 검색해야합니다  --> */}
+        <Header className="header" id="wrapper"/> 
+        <Sections className="article sections">
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/login" element={<Login authURL={Config.authURL} />} />
             <Route path="/inventory" element={<Inventory />} />
           </Routes >
-        </Section>
+        </Sections>
         <Footer className="footer" id="wrapper"/>
       </div>
     );

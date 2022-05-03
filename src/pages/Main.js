@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 //defined components
 import { GetUserName } from '../components/GetUser';
 import { getCookie, setCookie } from '../components/Cookies';
-import Lorem from './../components/Lorem';
+import Lorem from '../components/Lorem';
 
 import { Link } from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';

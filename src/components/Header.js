@@ -7,7 +7,7 @@ export default function Header(props) {
   return (
     <Grid item xs={props.itemStyle}>
       <header {...props}>
-        {/* <Nav /> */}
+        <Nav />
       </header>
     </Grid>
   );

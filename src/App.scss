@@ -31,7 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.section {
+.sections {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 5vw;
@@ -58,8 +58,10 @@ nav {
 // }
 
 #wrapper {
-  background-color: #202020;
-  box-shadow: 0 0 10px black;
+  @at-root .sections {
+    background-color: #202020;
+    box-shadow: 0 0 10px black;
+  }
 
   .header {
     padding-top: 1vw;

@@ -28,7 +28,7 @@ function Main() {
 
       <br />
       {userName ? userName : "모험가"}님! 네티아 세계에서 무엇을 하고 싶으세요?<br /><br />
-      <Stack
+      {/* <Stack
         spacing={2}
         direction="row"
         justifyContent="center"
@@ -42,7 +42,7 @@ function Main() {
             <Button variant="contained" size="large">인벤토리 화면</Button>
           </Link>
         </ThemeProvider>
-      </Stack>
+      </Stack> */}
 
       <Lorem />
     </div>

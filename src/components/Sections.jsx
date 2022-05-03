@@ -1,10 +1,13 @@
 import React from "react";
+import Grid from '@mui/material/Grid';
 
 function Sections(props) {
   return (
-    <article {...props}>
-      {props.children}
-    </article>
+    <Grid item xs={props.itemStyle}>
+      <article {...props}>
+        {props.children}
+      </article>
+    </Grid>
   );
 }
 

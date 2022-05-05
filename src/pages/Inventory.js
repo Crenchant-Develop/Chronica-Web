@@ -2,7 +2,7 @@ import React from 'react';
 
 //defined components
 import { ThemeProvider } from '@mui/material/styles';
-import { Theme } from '../components/Theme';
+import { Theme } from '../design/Theme';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 

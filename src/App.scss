@@ -14,69 +14,30 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  background-color: hsl(240, 25%, 25%);
+  background-color: #303050;
   color: white;
-
 
   font-family: 'Pretendard-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sections {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 5vw;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 1vw;
-}
-
-.delta {
-  display: inline;
-  letter-spacing: 0;
+mark {
   background: linear-gradient(to top, #fff47e, #ff7e49);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-// .transparent {
-//   background-color: #20202000;
-//   box-shadow: none;
-// }
+.article {
+  padding: 1vh;
+  min-height: 60vh;
+}
 
-#wrapper {
-  @at-root .sections {
-    background-color: #202020;
-    box-shadow: 0 0 10px black;
-  }
-
-  .header {
-    padding-top: 1vw;
-    font-size: calc(1vw + 1vmin);
-  }
-
-  .context {
-    padding-bottom: 1vw;
-    text-align: center;
-
-    h1 {
-      display: inline;
-    }
-  }
-
-  // .footer {
-  // }
+.fixed-header {
+  font-size: calc(1vw + 1vmin);
 }

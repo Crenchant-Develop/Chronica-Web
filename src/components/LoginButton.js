@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import { Theme } from "./Theme";
+import { Theme } from "../design/Theme";
 import SvgIcon from '@mui/material/SvgIcon';
 
 import { ReactComponent as DiscordIco } from '../DiscordIcon.svg';

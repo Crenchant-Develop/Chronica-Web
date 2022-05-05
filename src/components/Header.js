@@ -1,14 +1,19 @@
-import { TitleTheme } from "./Theme";
-import { ThemeProvider } from '@mui/material/styles';
+// import { TitleTheme } from "../design/Theme";
+// import { ThemeProvider } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
-import Nav from './Nav';
+
 
 export default function Header(props) {
   return (
-    <Grid item xs={props.itemStyle}>
-      <header {...props}>
-        <Nav />
-      </header>
-    </Grid>
+    <header {...props}>
+      <Grid container sx={props.sx}>
+        <div>
+          <h1>
+            NETE<mark>△</mark>
+          </h1>
+          <h5>당신이 만드는 일대기, 네티아</h5>
+        </div>
+      </Grid>
+    </header>
   );
 }

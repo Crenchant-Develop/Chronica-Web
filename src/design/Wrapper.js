@@ -5,7 +5,6 @@ const wrapper = {
   justifyContent: 'center',
   alignItems: 'center',
   textAlign: 'center',
-  minHeight: '15vh'
 };
 
 export default wrapper;

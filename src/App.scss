@@ -33,11 +33,21 @@ mark {
   -webkit-text-fill-color: transparent;
 }
 
-.article {
-  padding: 1vh;
-  min-height: 60vh;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
 }
 
 .fixed-header {
-  font-size: calc(1vw + 1vmin);
+  font-size: calc(0.8vw + 1vmin);
+}
+
+.article {
+  padding: 1vh;
 }

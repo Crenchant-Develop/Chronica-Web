@@ -1,7 +1,6 @@
 //core
 import React from "react";
 // import { Routes, Route } from "react-router-dom";
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 //Pages
@@ -23,11 +22,6 @@ import { Theme } from "./design/Theme";
 import wrapper from "./design/Wrapper";
 
 function App() {
-  const gridContainer = {
-    display: 'grid',
-    minHeight: '100vh'
-  };
-
   const leftContainer = {
     backgroundColor: 'secondary.dark'
   };
@@ -37,24 +31,23 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={Theme} >
-      <Box sx={gridContainer}>
-        <Grid className="App" container direction="row">
-          <Grid className="left-container"
-            direction="columns" sx={leftContainer} item xs={2}>
-            <Nav condition={true} />
-          </Grid>
-          <Grid className="right-container"
-            direction="columns" sx={rightContainer} item xs>
-            <Header className="fixed-header" sx={wrapper} />
-            <Article className="article">
-              {'삑삑삑'.repeat(1000)}
-            </Article>
-            <Footer className="footer" sx={wrapper} />
-          </Grid>
+
+    <Grid className="App" container direction="row" >
+      <ThemeProvider className="container" theme={Theme} >
+        <Grid className="left-container"
+          direction="columns" sx={leftContainer} item xs={2}>
+          <Nav condition={true} />
         </Grid>
-      </Box>
-    </ThemeProvider>
+        <Grid className="right-container"
+          direction="columns" sx={rightContainer} item xs>
+          <Header className="fixed-header" sx={wrapper} />
+          <Article className="article">
+            {'삑삑삑'.repeat(1000)}
+          </Article>
+          <Footer className="footer" sx={wrapper} />
+        </Grid>
+      </ThemeProvider>
+    </Grid>
   );
 }
 

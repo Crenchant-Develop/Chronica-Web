@@ -1,0 +1,36 @@
+@use "styles/module" as c;
+
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  padding: 4em 3em 0em 3em; // bottom padding is zero
+  display: block;
+  &:active {
+    text-decoration: none;
+    color: #000;
+  }
+
+  svg {
+    color: aquamarine;
+  }
+}
+
+nav {
+  background-color: royalblue;
+  flex: none;
+  height: 100%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll; /* scrollable*/
+    padding: 0;
+    margin: 0;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera*/
+    }
+  }
+}

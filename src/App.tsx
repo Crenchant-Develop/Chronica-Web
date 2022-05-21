@@ -4,7 +4,7 @@ import Header from "./components/header/headerPresenter";
 import Main from "./components/main/mainPresenter";
 import SideBar from "./components/sidenav/sidebarPresenter";
 
-//
+//App
 function App() {
   return (
     <div className="App">

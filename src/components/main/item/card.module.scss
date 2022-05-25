@@ -1,0 +1,21 @@
+@use "styles/module" as c;
+
+.cardObject {
+  width: 20%;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+}
+
+.cardContainer {
+  margin: 10vh;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+}
+
+.cardTitle {
+  margin: -2vh;
+  margin-bottom: -1vh;
+}

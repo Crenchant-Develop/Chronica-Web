@@ -11,7 +11,7 @@ function App() {
       <SideBar></SideBar>
       <div id="content">
         <Header></Header>
-        <Main>
+        <Main pageType={"inventory"}>
           <article></article>
         </Main>
         <Footer></Footer>

@@ -1,7 +1,8 @@
 @use "styles/module" as c;
 
 main {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: antiquewhite;
   height: 100%;
 }

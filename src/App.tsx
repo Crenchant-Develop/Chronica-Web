@@ -7,6 +7,10 @@ import Box from '@mui/material/Box';
 
 
 
+<<<<<<< HEAD
+=======
+//App
+>>>>>>> ba8a9c3f9cb87b69a79c14b0d9513e449e08cf15
 function App() {
   return (
     <div className="App">

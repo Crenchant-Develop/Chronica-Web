@@ -1,22 +1,31 @@
+import { Box, SxProps, Theme } from "@mui/material";
 import "./App.css";
 import Footer from "./components/footer/footerPresenter";
 import Header from "./components/header/headerPresenter";
 import Main from "./components/main/mainPresenter";
 import SideBar from "./components/sidenav/sidebarPresenter";
 
-//
+const AppSx: SxProps<Theme> = {
+  display: "grid",
+  gridTemplateColumns: "1fr 9fr",
+  gridTemplateRows: "minmax(100vh, auto)",
+};
+
+const rightItemSx: SxProps<Theme> = {
+  display: "grid",
+  gridTemplateRows: "2fr 17fr 1fr",
+};
+
 function App() {
   return (
-    <div className="App">
+    <Box sx={AppSx}>
       <SideBar></SideBar>
-      <div id="content">
+      <Box sx={rightItemSx} className={"rightItems"}>
         <Header></Header>
-        <Main>
-          <article></article>
-        </Main>
+        <Main></Main>
         <Footer></Footer>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

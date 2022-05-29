@@ -1,7 +1,7 @@
 import "./main.module.scss";
 
 interface Props {
-  children: JSX.Element;
+  children?: JSX.Element;
 }
 const Main: React.FC<Props> = ({ children }) => {
   return (

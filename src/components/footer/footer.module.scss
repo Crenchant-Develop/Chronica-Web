@@ -1,5 +1,8 @@
 @use "styles/module" as c;
 
+footer {
+  grid-area: 35 / 9 / 37 / 65;
+}
 h4 {
   margin: 0;
 }

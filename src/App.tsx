@@ -5,26 +5,23 @@ import Header from "./components/header/headerPresenter";
 import Main from "./components/main/mainPresenter";
 import SideBar from "./components/sidenav/sidebarPresenter";
 
-const AppSx: SxProps<Theme> = {
+const AppSx: Function = (isDesktop: boolean): SxProps<Theme> => ({
   display: "grid",
-  gridTemplateColumns: "1fr 9fr",
-  gridTemplateRows: "minmax(100vh, auto)",
-};
-
-const rightItemSx: SxProps<Theme> = {
-  display: "grid",
-  gridTemplateRows: "2fr 17fr 1fr",
-};
+  width: "100%",
+  height: "100%",
+  ...{
+    gridTemplateColumns: `repeat(${isDesktop ? 64 : 36}, 1fr)`,
+    gridTemplateRows: `repeat(${isDesktop ? 36 : 64}, 1fr)`,
+  },
+});
 
 function App() {
   return (
-    <Box sx={AppSx}>
+    <Box sx={AppSx(true)}>
       <SideBar></SideBar>
-      <Box sx={rightItemSx} className={"rightItems"}>
-        <Header></Header>
-        <Main></Main>
-        <Footer></Footer>
-      </Box>
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
     </Box>
   );
 }

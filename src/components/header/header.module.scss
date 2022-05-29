@@ -1,6 +1,7 @@
 @use "styles/module" as c;
 
 header {
+  grid-area: 1 / 9 / 5 / 65;
   background-color: aqua;
 }
 

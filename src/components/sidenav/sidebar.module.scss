@@ -6,6 +6,7 @@ a {
   outline: none;
   padding: 4em 3em 0em 3em; // bottom padding is zero
   display: block;
+
   &:active {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -18,19 +19,25 @@ a {
 
 nav {
   grid-area: 1 / 1 / 37 / 9;
-  background-color: #252525;
+  background-color: #000000;
   min-height: 100%;
+
   ul {
     display: flex;
     flex-direction: column;
     height: 100%;
-    overflow-y: scroll; /* scrollable*/
+    overflow-y: scroll;
+    /* scrollable*/
     padding: 0;
     margin: 0;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
     &::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera*/
+      display: none;
+      /* Chrome, Safari, Opera*/
     }
   }
 }

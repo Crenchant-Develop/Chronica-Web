@@ -1,10 +1,6 @@
 import { Divider } from "@mui/material";
 import routes, { RoutingColumn } from "./item/route";
 
-const style = {
-  color : `white`
-}
-
 function getNavMenuList() {
   return routes.map((item: RoutingColumn) => {
     return (
@@ -13,7 +9,6 @@ function getNavMenuList() {
           {item.icon}
           {item.name}
         </a>
-        <Divider sx={style}/>
       </li>
     );
   }); // map sideBar Item becaouse pre calculate

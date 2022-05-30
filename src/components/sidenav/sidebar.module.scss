@@ -1,14 +1,14 @@
 @use "styles/module" as c;
 
 a {
-  color: #000;
+  color: white;
   text-decoration: none;
   outline: none;
   padding: 4em 3em 0em 3em; // bottom padding is zero
   display: block;
   &:active {
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 255, 255);
   }
 
   svg {
@@ -18,7 +18,7 @@ a {
 
 nav {
   grid-area: 1 / 1 / 37 / 9;
-  background-color: royalblue;
+  background-color: #252525;
   min-height: 100%;
   ul {
     display: flex;

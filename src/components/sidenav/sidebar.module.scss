@@ -1,43 +1,13 @@
 @use "styles/module" as c;
 
-a {
-  color: white;
-  text-decoration: none;
-  outline: none;
-  padding: 4em 3em 0em 3em; // bottom padding is zero
-  display: block;
-
-  &:active {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-
-  svg {
-    color: aquamarine;
-  }
-}
-
 nav {
   grid-area: 1 / 1 / 37 / 9;
-  background-color: #222222;
-  min-height: 100%;
 
   ul {
     display: flex;
-    flex-direction: column;
+    text-align: center;
     height: 100%;
-    overflow-y: scroll;
-    /* scrollable*/
-    padding: 0;
-    margin: 0;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-
-    /* Firefox */
-    &::-webkit-scrollbar {
-      display: none;
-      /* Chrome, Safari, Opera*/
-    }
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }

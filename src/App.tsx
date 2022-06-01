@@ -1,5 +1,5 @@
-import { Box, SxProps, Theme } from "@mui/material";
-import Container from '@mui/material/Container';
+import { SxProps, Theme } from "@mui/material";
+import Container from "@mui/material/Container";
 
 import Footer from "./components/footer/footerPresenter";
 import Header from "./components/header/headerPresenter";
@@ -13,7 +13,6 @@ const AppSx: Function = (isDesktop: boolean): SxProps<Theme> => ({
     gridTemplateRows: `repeat(${isDesktop ? 36 : 64}, 1fr)`,
   },
 });
-
 
 function App() {
   return (

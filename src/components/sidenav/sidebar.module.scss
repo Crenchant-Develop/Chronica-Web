@@ -4,10 +4,6 @@ nav {
   grid-area: 1 / 1 / 37 / 9;
 
   ul {
-    display: flex;
     text-align: center;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
   }
 }

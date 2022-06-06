@@ -13,6 +13,7 @@ const listItemButtonSx: SxProps<Theme> = {
 };
 const iconSx: SxProps<Theme> = {
   color: "aquamarine",
+  minWidth: "30px",
 };
 function getNavMenuList() {
   return routes.map((item: RoutingColumn) => {

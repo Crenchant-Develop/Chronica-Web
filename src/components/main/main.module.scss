@@ -1,8 +1,11 @@
 @use "styles/module" as c;
 
 main {
-  display: flex;
-  flex-direction: column;
-  background-color: antiquewhite;
-  height: 100%;
+  grid-area: 5 / 9 / 35 / 65;
+  background-color: #121212;
+  color: white;
+}
+
+h2 {
+  margin: 0;
 }

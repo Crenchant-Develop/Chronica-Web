@@ -1,7 +1,11 @@
 @use "styles/module" as c;
 
 header {
-  display: block;
-  background-color: aqua;
-  width: 100%;
+  grid-area: 1 / 9 / 5 / 65;
+  background-color: #333333;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
 }

@@ -1,5 +1,10 @@
-import { Dashboard, Inventory, SvgIconComponent } from "@mui/icons-material";
-import { IoAlbums, IoHome } from "react-icons/io5";
+import {
+  Dashboard,
+  Inventory,
+  Map,
+  SvgIconComponent,
+} from "@mui/icons-material";
+import { IoAlbums, IoHome, IoMap } from "react-icons/io5";
 
 export type RoutingColumn = {
   type: string;
@@ -9,6 +14,7 @@ export type RoutingColumn = {
   icon: JSX.Element;
   component: SvgIconComponent;
   noCollapse: boolean;
+  open?: boolean;
 };
 const routes: RoutingColumn[] = [
   // It is route table data, but current example value
@@ -16,7 +22,7 @@ const routes: RoutingColumn[] = [
     type: "collapse",
     name: "Dashboard",
     key: "dashboard",
-    route: "#dashboard",
+    route: "/dashboard",
     icon: <IoHome size="15px" color="inherit" />,
     component: Dashboard,
     noCollapse: true,
@@ -25,90 +31,18 @@ const routes: RoutingColumn[] = [
     type: "collapse",
     name: "Inventory",
     key: "inventory",
-    route: "#inventory",
+    route: "/inventory",
     icon: <IoAlbums size="15px" color="inherit" />,
     component: Inventory,
     noCollapse: true,
   },
   {
     type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Inventory",
-    key: "inventory",
-    route: "#inventory",
-    icon: <IoAlbums size="15px" color="inherit" />,
-    component: Inventory,
+    name: "Map",
+    key: "map",
+    route: "/map",
+    icon: <IoMap size="15px" color="inherit" />,
+    component: Map,
     noCollapse: true,
   },
 ];

@@ -1,7 +1,7 @@
 @use "styles/module" as c;
 
 header {
-  grid-area: 1 / 9 / 5 / 65;
+  grid-column: 9 / 65;
   background-color: #333333;
   color: #fff;
 }

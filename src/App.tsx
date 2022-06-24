@@ -12,7 +12,7 @@ const AppSx: Function = (isDesktop: boolean): SxProps<Theme> => ({
     gridTemplateColumns: `repeat(${isDesktop ? 64 : 36}, 1fr)`,
     gridTemplateRows: `repeat(${isDesktop ? 36 : 64}, 1fr)`,
   },
-  gridAutoFlow: "column",
+  gridAutoFlow: "row",
 });
 
 function App() {

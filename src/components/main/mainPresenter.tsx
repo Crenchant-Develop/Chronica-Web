@@ -18,7 +18,7 @@ interface Props {
 const Inventory: React.FC = () => {
   return (
     <Cards
-      cards={new Array(8).fill({
+      cards={new Array(10).fill({
         imageLink: dummyImage,
         name: dummyName,
         summary: dummySummary,
